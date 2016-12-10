@@ -14,6 +14,7 @@
                  [org.clojure/clojure "1.8.0"]
                  [org.clojure/clojure-contrib "1.2.0"]
                  [org.clojure/data.json "0.2.2"]
+                 [org.clojure/core.typed "0.3.26"]
                  [org.clojure/tools.logging "0.2.3"]
                  [ru.org.codingteam/jinput-platform-natives "2.0.6"]
                  [ru.org.codingteam/lwjgl-platform-natives "2.9.1"]
@@ -25,5 +26,7 @@
              :dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                                   [midje "1.6.3"]]
                    :plugins [[lein-ring "0.8.11"]
-                             [lein-midje "3.0.0"]]}}
+                             [lein-midje "3.0.0"]
+                             [lein-typed "0.3.5"]]}}
+  :core.typed {:check [hyperspace.library.misc]}
   :main hyperspace.main)
